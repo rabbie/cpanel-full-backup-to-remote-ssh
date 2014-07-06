@@ -5,6 +5,11 @@ This script creates a backup of all cpanel accounts on your local machine and th
 
 This is particularly useful for servers that do not have an equal amount of disk space available as is used on the server. i.e, if your /home directory is 50GB, you need another 50GB (approx) in order to keep your cPanel managed backups. This script will create a backup -> copy the backup to the remote server -> delete the backup from the local server -> move on
 
+Requirements
+============
+
+This script requires that you create an ssh key-pair on your cPanel server and your remote backup server. It will use the ssh key pair to perform your backups.
+
 Cron
 ====
 
